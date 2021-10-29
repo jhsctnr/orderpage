@@ -1,0 +1,74 @@
+.floatClear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap div {
+  border: 1px solid #000;
+}
+
+.container {
+  width: 1000px;
+  height: 650px;
+}
+
+.container .section {
+  float: left;
+  height: 100%;
+}
+
+.container .section:first-child {
+  width: 30%;
+}
+
+.container .section:last-child {
+  width: 70%;
+}
+
+.product-info,
+.correspondent-info {
+  width: 100%;
+  height: 30px;
+}
+
+.product-container {
+  width: 100%;
+  height: calc(100%-60px);
+}
+
+.product-list-container {
+  width: 100%;
+  height: 100%;
+}
+
+.product-list-options {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #000;
+}
+
+.table-container {
+  height: 400px;
+  width: 100%;
+}
+
+.section2 .table-container {
+  height: 300px;
+  width: 100%;
+}
+
+.product-list-stock_info span {
+  border: 1px solid #000;
+  display: block;
+  float: left;
+}
+
+.discountRatio {
+  width: 30px;
+}

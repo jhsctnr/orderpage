@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>판매등록</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container floatClear">
+        <div class="header">
+          <button type="button">신용정보조회</button>
+          <button type="button">엑셀일괄등록▼</button>
+          <button type="button">판매구매자료▼</button>
+          <button type="button">주문서▼</button>
+        </div>
+        <div class="section">
+          <div class="correspondent-info">
+            <span>거래처 정보</span>
+          </div>
+          <div class="product-info">
+            <span>품목정보</span>
+          </div>
+          <div class="product-container">
+            <div class="product-list-container">
+              <div class="product-list-options">
+                <select>
+                  <option>선택거래처기준</option>
+                </select>
+                <br />
+                <select>
+                  <option>최근 3개월 거래품목</option>
+                </select>
+                <button type="button">조회</button>
+              </div>
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>품목/규격</th>
+                      <th>단위</th>
+                      <th>최근거래단가</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>SLA4020-42</td>
+                      <td></td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>무선마우스 A</td>
+                      <td>EA</td>
+                      <td>30000</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>무선마우스 b</td>
+                      <td>EA</td>
+                      <td>7000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-list-info">
+                <div class="product-list-stock_info floatClear">
+                  <span>선택품목 재고량</span>
+                  <span>350</span>
+                </div>
+                <div>
+                  <label>적용단가</label>
+                  <select>
+                    <option>최근 거래단가</option>
+                  </select>
+                </div>
+                <div>
+                  <label>할인/할증</label>
+                  <select>
+                    <option>선택</option>
+                  </select>
+                  <input class="discountRatio" type="text" value="0" disabled />
+                  %
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-container">
+            <div>
+              <table>
+                <tr>
+                  <td>* 거래처</td>
+                  <td>
+                    <select>
+                      <option>가산오피스</option>
+                    </select>
+                  </td>
+                  <td>
+                    <span>사업자번호 : <span>107-82-81213</span></span>
+                  </td>
+                  <td>
+                    <span>대표자명 : <span>김가산</span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>* 거래일자</td>
+                  <td colspan="3">
+                    <input type="date" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>* 거래종류</td>
+                  <td colspan="3">
+                    <select>
+                      <option>상품매출</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>* 사업부문/현장</td>
+                  <td>
+                    <select>
+                      <option>A 가산지점</option>
+                    </select>
+                  </td>
+                  <td>
+                    <label>* 부서</label>
+                    <select>
+                      <option>A 영업부</option>
+                    </select>
+                  </td>
+                  <td>
+                    <label>* 직원</label>
+                    <select>
+                      <option>강나루</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="section2">
+              <div>
+                <table>
+                  <tr>
+                    <td>* 부가세처리</td>
+                    <td>
+                      <select>
+                        <option>1.부가세별도10%</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select>
+                        <option>1.(세금)계산서</option>
+                      </select>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /><label>바코드입력</label></td>
+                    <td colspan="2">
+                      <input type="text" />
+                    </td>
+                    <td>
+                      <button type="button">+</button>
+                      <button type="button">-</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>품목/규격</th>
+                      <th>수량</th>
+                      <th>단위</th>
+                      <th>단가</th>
+                      <th>공급가액</th>
+                      <th>부가세</th>
+                      <th>합계</th>
+                      <th>비고</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>무선마우스 A</td>
+                      <td>100</td>
+                      <td>
+                        <select>
+                          <option>EA</option>
+                        </select>
+                      </td>
+                      <td>10000</td>
+                      <td>1,000,000</td>
+                      <td>100,000</td>
+                      <td>1,100,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>무선마우스 B</td>
+                      <td>50</td>
+                      <td>
+                        <select>
+                          <option>EA</option>
+                        </select>
+                      </td>
+                      <td>30000</td>
+                      <td>1,500,000</td>
+                      <td>150,000</td>
+                      <td>1,650,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>무선마우스 C</td>
+                      <td>150</td>
+                      <td>
+                        <select>
+                          <option>EA</option>
+                        </select>
+                      </td>
+                      <td>7000</td>
+                      <td>1,050,000</td>
+                      <td>105,000</td>
+                      <td>1,155,000</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <td>수량</td>
+                  <td>400</td>
+                  <td>공급가액</td>
+                  <td>8,750,000</td>
+                  <td>세액</td>
+                  <td>875,000</td>
+                  <td>합계</td>
+                  <td>9,625,000</td>
+                </tr>
+                <tr>
+                  <td>* 적요</td>
+                  <td colspan="7"><input type="text" /></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="collectionCost_info-container">
+            <table>
+              <thead>
+                <tr>
+                  <td>수금정보</td>
+                  <td><input type="radio" /><label>외상거래</label></td>
+                  <td><input type="radio" /><label>즉시결제</label></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>* 입금예정일</td>
+                  <td>
+                    <select>
+                      <option></option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>* 결제수단</td>
+                  <td>
+                    <select>
+                      <option>선택</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>
+                    <input type="checkbox" /><label>회계전표 발행(Z)</label>
+                  </td>
+                  <td><input type="checkbox" /><label>인쇄(X)</label></td>
+                  <td>
+                    <input type="checkbox" /><label>거래명세표 발행(C)</label>
+                  </td>
+                  <td><input type="checkbox" /><label>인쇄(V)</label></td>
+                  <td>
+                    <input type="checkbox" /><label>세금계산서 발행(B)</label>
+                  </td>
+                  <td><input type="checkbox" /><label>인쇄(N)</label></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
